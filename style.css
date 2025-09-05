@@ -149,6 +149,12 @@ span{
   .gradient-btn{
     display: none;
   }
+  .home-img img{
+    position: relative;
+    margin-left: -62.5vw;
+     width: 10vw;
+    height: 100px;
+  }
 }
 
 
