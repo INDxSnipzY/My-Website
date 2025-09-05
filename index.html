@@ -9,38 +9,40 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    
   </head>
-  <body>
 
+  <body>
     <header class="header">
-      <a href="#" class="logo">
-        Ajay <span> Sawle</span>
-      </a>
+      <a href="#" class="logo">Ajay <span>Sawle</span></a>
 
       <i class="bx bx-menu" id="menu-icon"></i>
+
       <nav class="navbar">
         <a href="#">Home</a>
         <a href="./Assets/About/About.html">About</a>
         <a href="./Assets/Services/service.html">Services</a>
         <a href="./Assets/Projects/project.html">Projects</a>
         <a href="./Assets/Contact/contact.html">Contact</a>
-
       </nav>
+      
 
-      <button class="gradient-btn" onclick="contact()">Contact Me
-
-      </button>
+      <button class="gradient-btn" onclick="contact()">Contact Me</button>
     </header>
 
     <section class="home" id="home">
       <div class="home-content">
         <h1>Hi, It's <span>Ajay</span></h1>
-        <h3>
-          I'm, a <span>Web Developer</span>
-        </h3>
+        <h3>I'm, a <span>Web Developer</span></h3>
         <p>
-          I am Ajay (SnipzY) Sawle, a former BGMI professional who’s now channeling that same passion and focus into web development. Gaming taught me discipline, quick thinking, and how to perform under pressure — skills I now use to create clean, functional, and engaging websites. I enjoy turning ideas into digital experiences that feel smooth, look great, and actually solve problems. For me, it’s all about combining creativity with precision to make something people will truly enjoy using.
+          I am Ajay (SnipzY) Sawle, a former BGMI professional who’s now
+          channeling that same passion and focus into web development. Gaming
+          taught me discipline, quick thinking, and how to perform under
+          pressure — skills I now use to create clean, functional, and engaging
+          websites. I enjoy turning ideas into digital experiences that feel
+          smooth, look great, and actually solve problems.
         </p>
+
         <div class="social-icons">
           <a href="https://github.com/INDxSnipzY" target="_blank">
             <i class="bx bxl-github"></i>
@@ -55,19 +57,42 @@
             <i class="bx bxl-twitter"></i>
           </a>
         </div>
+
         <div class="btn-grp">
           <a href="#">Hire</a>
           <a href="./Assets/Contact/contact.html">Contact</a>
         </div>
       </div>
+
       <div class="home-img">
-        <img src="image.jpg" alt="">
+        <img src="image.jpg" alt="" />
       </div>
     </section>
+
     <script>
+      // Contact Button Redirect
       function contact() {
         window.location.href = "./Assets/Contact/contact.html";
       }
+
+      let menu = document.querySelector("#menu-icon");
+      let navbar = document.querySelector(".navbar");
+
+      // Toggle menu open/close
+      menu.onclick = () => {
+        navbar.classList.toggle("active");
+        menu.classList.toggle("bx bx-menu");
+        menu.classList.toggle("bx bx-x");
+      };
+
+      // Close navbar when a link is clicked (mobile UX)
+      document.querySelectorAll(".navbar a").forEach(link => {
+        link.addEventListener("click", () => {
+          navbar.classList.remove("active");
+          menu.classList.remove("bx bx-x");
+          menu.classList.add("bx bx-menu");
+        });
+      });
     </script>
   </body>
 </html>
