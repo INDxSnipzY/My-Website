@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+    <header class="header">
+      <a href="#" class="logo">
+        Ajay <span> Sawle</span>
+      </a>
+
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="./Assets/About/About.html">About</a>
+        <a href="./Assets/Services/service.html">Services</a>
+        <a href="./Assets/Projects/project.html">Projects</a>
+        <a href="./Assets/Contact/contact.html">Contact</a>
+
+      </nav>
+
+      <button class="gradient-btn" onclick="contact()">Contact Me
+
+      </button>
+    </header>
+
+    <section class="home" id="home">
+      <div class="home-content">
+        <h1>Hi, It's <span>Ajay</span></h1>
+        <h3>
+          I'm, a <span>Web Developer</span>
+        </h3>
+        <p>
+          I am Ajay (SnipzY) Sawle, a former BGMI professional who’s now channeling that same passion and focus into web development. Gaming taught me discipline, quick thinking, and how to perform under pressure — skills I now use to create clean, functional, and engaging websites. I enjoy turning ideas into digital experiences that feel smooth, look great, and actually solve problems. For me, it’s all about combining creativity with precision to make something people will truly enjoy using.
+        </p>
+        <div class="social-icons">
+          <a href="https://github.com/INDxSnipzY" target="_blank">
+            <i class="bx bxl-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/ajay-sawle/" target="_blank">
+            <i class="bx bxl-linkedin-square"></i>
+          </a>
+          <a href="https://www.instagram.com/crazy._ajay_/" target="_blank">
+            <i class="bx bxl-instagram-alt"></i>
+          </a>
+          <a href="https://x.com/TSSnipzY" target="_blank">
+            <i class="bx bxl-twitter"></i>
+          </a>
+        </div>
+        <div class="btn-grp">
+          <a href="#">Hire</a>
+          <a href="./Assets/Contact/contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="home-img">
+        <img src="image.jpg" alt="">
+      </div>
+    </section>
+    <script>
+      function contact() {
+        window.location.href = "./Assets/Contact/contact.html";
+      }
+    </script>
+  </body>
+</html>

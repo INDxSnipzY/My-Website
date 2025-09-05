@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="../../style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+    <header class="header">
+      <a href="../../index.html" class="logo">
+        Ajay <span> Sawle</span>
+      </a>
+
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <nav class="navbar">
+        <a href="../../index.html">Home</a>
+        <a href="#">About</a>
+        <a href="../Services/service.html">Services</a>
+        <a href="../Projects/project.html">Projects</a>
+        <a href="../Contact/contact.html">Contact</a>
+
+      </nav>
+
+      <button class="gradient-btn" onclick="contact()">Contact Me
+
+      </button>
+    </header>
+    <section class="home" id="home">
+  <!-- Left Box -->
+  <div class="home-left">
+    <h1>Hi, I'm Ajay Sawle</h1>
+    <h3>Web Developer</h3>
+    <p>
+      Passionate web developer with expertise in creating dynamic and responsive websites. 
+      Skilled in HTML, CSS, JavaScript, and modern frameworks. 
+      Committed to delivering high-quality code and exceptional user experiences.
+    </p>
+  </div>
+
+  <!-- Right Box -->
+  <div class="home-right">
+    <img src="../../images/profile.jpg" alt="Profile Picture" />
+    <h2>Ajay Sawle</h2>
+    <h4>Web Developer</h4>
+  </div>
+</section>
+
+    <script>
+      function contact() {
+        window.location.href = "../Contact/contact.html";
+      }
+    </script>
+  </body>
+</html>
